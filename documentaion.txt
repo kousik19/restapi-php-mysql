@@ -1,0 +1,25 @@
+
+
+URL Format:
+
+	http://url/uri(application/entity)/param=json
+	
+	acceptable json key and value json:
+	
+		1. Any attribute name with value or value with condition for a particular entity
+			
+				e.g. param={"userId":"2"} or param={"userId":["<","3"]}
+				
+		2. "row-limit" as a key to get limited numbers of rows
+		
+				e.g. param={"row-limit":"3"}
+				
+		3. "return-attr" as a key takes array as value which contains the 
+			name of attributes 'll be return if not given all attributes 'll
+			be returned
+			
+				e.g. param={"return-attr":["name","email"]}
+				
+		http://localhost/purplecrm/user/param={"role":"agent","row-limit":"3","return-attr":["name","email"]}
+		
+				-This url 'll return top 3 agent's name and email

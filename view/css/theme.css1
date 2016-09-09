@@ -1,0 +1,29 @@
+.primary-color
+{
+	background-color:white;
+}
+
+.primary-text-color
+{
+	color:black;
+}
+
+.secondary-color
+{
+	background-color:black;
+}
+
+.secondary-text-color
+{
+	color:white;
+}
+
+.focus-color
+{
+	background-color:skyblue;
+}
+
+.focus-text-color
+{
+	color:white;
+}
